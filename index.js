@@ -9,6 +9,11 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
+// Serve static files from the React frontend app
+app.get('/', (req, res) => {
+  res.send('🚀 GrowthAI Backend is running on Render!');
+});
+
 //start server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
