@@ -32,7 +32,7 @@ app.post('/business-data', (req, res) => {
 });
 
 // Route: GET /regenerate-headlines?name={name}&location={location}
-app.get('/regenerate-headlines', (req, res) => {
+app.get('/regenerate-headline', (req, res) => {
   const { name, location } = req.query;
 
   if (!name || !location) {
